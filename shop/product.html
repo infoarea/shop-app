@@ -83,17 +83,8 @@
                                         <th>Action</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Men</td>
-                                        <td>1200TK</td>
-                                        <td>900TK</td>
-                                        <td>20</td>
-                                        <td>photo</td>
-                                        <td>Publish</td>
-                                        <td></td>
-                                    </tr>
+                                <tbody id="product_list">
+                                    
                                 </tbody>
                             </table>
                         </div>
@@ -165,8 +156,35 @@
                             </div>
 
                             <div class="my-3">
+                                <label for="">Category</label>
+                                <select class="form-control" name="category" id="">
+                                    <option value="">--Select--</option>
+                                    <option value="Men">Men</option>
+                                    <option value="Women">Women</option>
+                                    <option value="Kidds">Kidds</option>
+                                    <option value="Varities">Varities</option>
+                                </select>
+                            </div>
+
+                            <div class="my-3">
+                                <label for="">Tag</label>
+                                <select class="form-control" name="tag" id="">
+                                    <option value="">--Select--</option>
+                                    <option value="Eid">Eid</option>
+                                    <option value="Puja">Puja</option>
+                                    <option value="Boishakh">Boishakh</option>
+                                    <option value="NewYear">New Year</option>
+                                </select>
+                            </div>
+
+                            <div class="my-3">
                                 <label for="">Photo</label>
                                 <input class="form-control" name="product_photo" type="file">
+                            </div>
+
+                            <div class="my-3">
+                                <label for="">Gallery</label>
+                                <input class="form-control" name="product_gall" multiple type="file">
                             </div>
 
                             <div class="my-3">
